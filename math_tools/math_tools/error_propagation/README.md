@@ -1,24 +1,37 @@
-# Error Propagation Calculator
+# Calculadora de Erro (Propagação de Incerteza)
 
-Script para calcular erro por propagação usando derivadas automáticas (SymPy).
+Este módulo implementa uma calculadora de incerteza baseada na fórmula geral de propagação de erros:
 
-## Funcionalidades
+\[
+\Delta f = \sqrt{
+\left(\frac{\partial f}{\partial x_1}\Delta x_1\right)^2 +
+\left(\frac{\partial f}{\partial x_2}\Delta x_2\right)^2 +
+\cdots
+}
+\]
 
-- Aceita qualquer função matemática simbólica (ex: x1*x2**2/sqrt(x3))
-- Calcula derivadas parciais automaticamente
-- Usa `lambdify` para transformar derivadas em funções reais
-- Aplica a fórmula geral de propagação de incertezas
-- Funciona para qualquer número de variáveis
+## Como funciona
 
-## Como usar
+1. O usuário informa:
+   - número de variáveis
+   - valor de cada variável
+   - erro associado a cada variável
+   - a função simbólica (Ex: `x1*x2**2`)
 
-Execute:
+2. O programa usa **SymPy** para:
+   - interpretar a função
+   - calcular derivadas parciais automaticamente
+   - transformar as derivadas em funções avaliáveis (lambdify)
 
-python error_propagation.py
+3. O erro final é calculado aplicando a fórmula acima.
 
-E insira:
+## Requisitos
 
-1. Número de variáveis  
-2. Valores das grandezas  
-3. Erros associados  
-4. A função simbólica  
+- Python 3
+- sympy
+- pandas (opcional, mas importado no código)
+
+Instalação:
+
+```bash
+pip install sympy pandas
