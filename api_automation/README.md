@@ -1,23 +1,15 @@
-api_automation
+Automação com APIs
 
-Pasta destinada a scripts relacionados a automação com APIs.
-Aqui ficarão, no futuro, códigos para:
+Scripts para acessar APIs externas, fazer requisições, baixar dados e padronizar respostas.
 
-Fazer requisições a APIs externas
+Conteúdo
 
-Padronizar respostas (JSON, status codes, erros)
+Funções simples para fazer GET/POST
 
-Integrar dados baixados com outras partes do projeto
+Tratamento básico de erros
 
-Atualmente a pasta está em construção.
+Scripts que puxam dados de APIs públicas
 
-Estrutura prevista (quando os arquivos forem criados)
-api_automation/
-│
-├── api_utils.py       # Funções helper para requisições
-├── examples/          # Exemplos de uso
-└── README.md
 Status
 
-Este módulo ainda não possui funções implementadas.
-Conforme os scripts forem sendo criados, este README será atualizado com instruções de uso e exemplos.
+Em construção — novos scripts serão adicionados conforme forem criados.
