@@ -1,4 +1,3 @@
-@ -0,0 +1,24 @@
 # Error Propagation Calculator
 
 Script para calcular erro por propagação usando derivadas automáticas (SymPy).
